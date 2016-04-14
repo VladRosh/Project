@@ -7,8 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BE1315D121536449B78EC10 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB8978BACAA38B00D5B36AD /* Pods.framework */; };
+		F528994F1CBEB60B001135EF /* allStations.json in Resources */ = {isa = PBXBuildFile; fileRef = F528994E1CBEB60B001135EF /* allStations.json */; };
+		F52899551CBEB7F3001135EF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52899541CBEB7F3001135EF /* DataManager.swift */; };
+		F52899571CBEB8F6001135EF /* UIUtilits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52899561CBEB8F6001135EF /* UIUtilits.swift */; };
+		F52899591CBEBDCC001135EF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52899581CBEBDCC001135EF /* MainTableViewController.swift */; };
+		F528995B1CBEC08B001135EF /* DepartureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528995A1CBEC08B001135EF /* DepartureTableViewController.swift */; };
+		F528995D1CBEC0B9001135EF /* ArrivalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528995C1CBEC0B9001135EF /* ArrivalTableViewController.swift */; };
+		F528995F1CBEC14B001135EF /* InfoStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528995E1CBEC14B001135EF /* InfoStationViewController.swift */; };
+		F52899611CBEC17A001135EF /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52899601CBEC17A001135EF /* DateViewController.swift */; };
+		F52899641CBEC787001135EF /* MainDepartureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52899631CBEC787001135EF /* MainDepartureTableViewCell.swift */; };
+		F52899661CBEC7A4001135EF /* MainArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52899651CBEC7A4001135EF /* MainArrivalTableViewCell.swift */; };
+		F52899681CBEC7C8001135EF /* MainDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52899671CBEC7C8001135EF /* MainDateTableViewCell.swift */; };
+		F528996E1CBED371001135EF /* DepartureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528996D1CBED371001135EF /* DepartureTableViewCell.swift */; };
+		F52899701CBED384001135EF /* ArrivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528996F1CBED384001135EF /* ArrivalTableViewCell.swift */; };
+		F5AEBF3A1CBEAB20002221E3 /* DepartureCity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF381CBEAB20002221E3 /* DepartureCity+CoreDataProperties.swift */; };
+		F5AEBF3B1CBEAB20002221E3 /* DepartureCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF391CBEAB20002221E3 /* DepartureCity.swift */; };
+		F5AEBF421CBEAB74002221E3 /* DepartureStationPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF3C1CBEAB74002221E3 /* DepartureStationPoint+CoreDataProperties.swift */; };
+		F5AEBF431CBEAB74002221E3 /* DepartureStationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF3D1CBEAB74002221E3 /* DepartureStationPoint.swift */; };
+		F5AEBF441CBEAB74002221E3 /* DeparturePoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF3E1CBEAB74002221E3 /* DeparturePoint+CoreDataProperties.swift */; };
+		F5AEBF451CBEAB74002221E3 /* DeparturePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF3F1CBEAB74002221E3 /* DeparturePoint.swift */; };
+		F5AEBF461CBEAB74002221E3 /* DepartureStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF401CBEAB74002221E3 /* DepartureStation+CoreDataProperties.swift */; };
+		F5AEBF471CBEAB74002221E3 /* DepartureStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF411CBEAB74002221E3 /* DepartureStation.swift */; };
+		F5AEBF4D1CBEAE48002221E3 /* SelectedDepartureStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF491CBEAE48002221E3 /* SelectedDepartureStation+CoreDataProperties.swift */; };
+		F5AEBF4E1CBEAE48002221E3 /* SelectedDepartureStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF4A1CBEAE48002221E3 /* SelectedDepartureStation.swift */; };
+		F5AEBF4F1CBEAE48002221E3 /* SelectedDepartureStationPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF4B1CBEAE48002221E3 /* SelectedDepartureStationPoint+CoreDataProperties.swift */; };
+		F5AEBF501CBEAE48002221E3 /* SelectedDepartureStationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF4C1CBEAE48002221E3 /* SelectedDepartureStationPoint.swift */; };
+		F5AEBF5A1CBEAFF6002221E3 /* ArrivalStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF521CBEAFF6002221E3 /* ArrivalStation+CoreDataProperties.swift */; };
+		F5AEBF5B1CBEAFF6002221E3 /* ArrivalStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF531CBEAFF6002221E3 /* ArrivalStation.swift */; };
+		F5AEBF5C1CBEAFF6002221E3 /* ArrivalPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF541CBEAFF6002221E3 /* ArrivalPoint+CoreDataProperties.swift */; };
+		F5AEBF5D1CBEAFF6002221E3 /* ArrivalPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF551CBEAFF6002221E3 /* ArrivalPoint.swift */; };
+		F5AEBF5E1CBEAFF6002221E3 /* ArrivalCity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF561CBEAFF6002221E3 /* ArrivalCity+CoreDataProperties.swift */; };
+		F5AEBF5F1CBEAFF6002221E3 /* ArrivalCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF571CBEAFF6002221E3 /* ArrivalCity.swift */; };
+		F5AEBF601CBEAFF6002221E3 /* ArrivalStationPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF581CBEAFF6002221E3 /* ArrivalStationPoint+CoreDataProperties.swift */; };
+		F5AEBF611CBEAFF6002221E3 /* ArrivalStationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF591CBEAFF6002221E3 /* ArrivalStationPoint.swift */; };
+		F5AEBF651CBEB189002221E3 /* SelectedArrivalStation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF631CBEB189002221E3 /* SelectedArrivalStation+CoreDataProperties.swift */; };
+		F5AEBF661CBEB189002221E3 /* SelectedArrivalStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF641CBEB189002221E3 /* SelectedArrivalStation.swift */; };
+		F5AEBF6B1CBEB1CB002221E3 /* SelectedArrivalStationPoint+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF691CBEB1CB002221E3 /* SelectedArrivalStationPoint+CoreDataProperties.swift */; };
+		F5AEBF6C1CBEB1CB002221E3 /* SelectedArrivalStationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF6A1CBEB1CB002221E3 /* SelectedArrivalStationPoint.swift */; };
+		F5AEBF701CBEB35C002221E3 /* SelectedDate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF6E1CBEB35C002221E3 /* SelectedDate+CoreDataProperties.swift */; };
+		F5AEBF711CBEB35C002221E3 /* SelectedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEBF6F1CBEB35C002221E3 /* SelectedDate.swift */; };
 		F5B0FF3D1CBE590F00F4EBC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0FF3C1CBE590F00F4EBC9 /* AppDelegate.swift */; };
-		F5B0FF3F1CBE590F00F4EBC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0FF3E1CBE590F00F4EBC9 /* ViewController.swift */; };
 		F5B0FF421CBE590F00F4EBC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B0FF401CBE590F00F4EBC9 /* Main.storyboard */; };
 		F5B0FF451CBE590F00F4EBC9 /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5B0FF431CBE590F00F4EBC9 /* Project.xcdatamodeld */; };
 		F5B0FF471CBE590F00F4EBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B0FF461CBE590F00F4EBC9 /* Assets.xcassets */; };
@@ -27,9 +66,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EB8978BACAA38B00D5B36AD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A9946F0554C95C4CF9245C6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F39D4DCCB167E2415D4E24A8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F528994E1CBEB60B001135EF /* allStations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allStations.json; sourceTree = "<group>"; };
+		F52899541CBEB7F3001135EF /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F52899561CBEB8F6001135EF /* UIUtilits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtilits.swift; sourceTree = "<group>"; };
+		F52899581CBEBDCC001135EF /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		F528995A1CBEC08B001135EF /* DepartureTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureTableViewController.swift; sourceTree = "<group>"; };
+		F528995C1CBEC0B9001135EF /* ArrivalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewController.swift; sourceTree = "<group>"; };
+		F528995E1CBEC14B001135EF /* InfoStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoStationViewController.swift; sourceTree = "<group>"; };
+		F52899601CBEC17A001135EF /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		F52899631CBEC787001135EF /* MainDepartureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDepartureTableViewCell.swift; sourceTree = "<group>"; };
+		F52899651CBEC7A4001135EF /* MainArrivalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainArrivalTableViewCell.swift; sourceTree = "<group>"; };
+		F52899671CBEC7C8001135EF /* MainDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDateTableViewCell.swift; sourceTree = "<group>"; };
+		F528996D1CBED371001135EF /* DepartureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureTableViewCell.swift; sourceTree = "<group>"; };
+		F528996F1CBED384001135EF /* ArrivalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalTableViewCell.swift; sourceTree = "<group>"; };
+		F5AEBF381CBEAB20002221E3 /* DepartureCity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DepartureCity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF391CBEAB20002221E3 /* DepartureCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureCity.swift; sourceTree = "<group>"; };
+		F5AEBF3C1CBEAB74002221E3 /* DepartureStationPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DepartureStationPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF3D1CBEAB74002221E3 /* DepartureStationPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureStationPoint.swift; sourceTree = "<group>"; };
+		F5AEBF3E1CBEAB74002221E3 /* DeparturePoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DeparturePoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF3F1CBEAB74002221E3 /* DeparturePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeparturePoint.swift; sourceTree = "<group>"; };
+		F5AEBF401CBEAB74002221E3 /* DepartureStation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DepartureStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF411CBEAB74002221E3 /* DepartureStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureStation.swift; sourceTree = "<group>"; };
+		F5AEBF491CBEAE48002221E3 /* SelectedDepartureStation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectedDepartureStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF4A1CBEAE48002221E3 /* SelectedDepartureStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedDepartureStation.swift; sourceTree = "<group>"; };
+		F5AEBF4B1CBEAE48002221E3 /* SelectedDepartureStationPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectedDepartureStationPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF4C1CBEAE48002221E3 /* SelectedDepartureStationPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedDepartureStationPoint.swift; sourceTree = "<group>"; };
+		F5AEBF521CBEAFF6002221E3 /* ArrivalStation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArrivalStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF531CBEAFF6002221E3 /* ArrivalStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalStation.swift; sourceTree = "<group>"; };
+		F5AEBF541CBEAFF6002221E3 /* ArrivalPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArrivalPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF551CBEAFF6002221E3 /* ArrivalPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalPoint.swift; sourceTree = "<group>"; };
+		F5AEBF561CBEAFF6002221E3 /* ArrivalCity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArrivalCity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF571CBEAFF6002221E3 /* ArrivalCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalCity.swift; sourceTree = "<group>"; };
+		F5AEBF581CBEAFF6002221E3 /* ArrivalStationPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArrivalStationPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF591CBEAFF6002221E3 /* ArrivalStationPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalStationPoint.swift; sourceTree = "<group>"; };
+		F5AEBF631CBEB189002221E3 /* SelectedArrivalStation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectedArrivalStation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF641CBEB189002221E3 /* SelectedArrivalStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedArrivalStation.swift; sourceTree = "<group>"; };
+		F5AEBF691CBEB1CB002221E3 /* SelectedArrivalStationPoint+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectedArrivalStationPoint+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF6A1CBEB1CB002221E3 /* SelectedArrivalStationPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedArrivalStationPoint.swift; sourceTree = "<group>"; };
+		F5AEBF6E1CBEB35C002221E3 /* SelectedDate+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectedDate+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5AEBF6F1CBEB35C002221E3 /* SelectedDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedDate.swift; sourceTree = "<group>"; };
 		F5B0FF391CBE590F00F4EBC9 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B0FF3C1CBE590F00F4EBC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5B0FF3E1CBE590F00F4EBC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5B0FF411CBE590F00F4EBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5B0FF441CBE590F00F4EBC9 /* Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project.xcdatamodel; sourceTree = "<group>"; };
 		F5B0FF461CBE590F00F4EBC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE1315D121536449B78EC10 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +139,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57C8CB6F8D72ADA49C43FD4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F39D4DCCB167E2415D4E24A8 /* Pods.debug.xcconfig */,
+				1A9946F0554C95C4CF9245C6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84127BFB7BA4E1848809C36D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EB8978BACAA38B00D5B36AD /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F52899501CBEB652001135EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F52899581CBEBDCC001135EF /* MainTableViewController.swift */,
+				F528995A1CBEC08B001135EF /* DepartureTableViewController.swift */,
+				F528995C1CBEC0B9001135EF /* ArrivalTableViewController.swift */,
+				F528995E1CBEC14B001135EF /* InfoStationViewController.swift */,
+				F52899601CBEC17A001135EF /* DateViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F52899511CBEB720001135EF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F52899541CBEB7F3001135EF /* DataManager.swift */,
+				F52899561CBEB8F6001135EF /* UIUtilits.swift */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		F52899621CBEC5A2001135EF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F528996D1CBED371001135EF /* DepartureTableViewCell.swift */,
+				F528996F1CBED384001135EF /* ArrivalTableViewCell.swift */,
+				F52899631CBEC787001135EF /* MainDepartureTableViewCell.swift */,
+				F52899651CBEC7A4001135EF /* MainArrivalTableViewCell.swift */,
+				F52899671CBEC7C8001135EF /* MainDateTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		F5AEBF481CBEADDD002221E3 /* SelectedDepartureData */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEBF491CBEAE48002221E3 /* SelectedDepartureStation+CoreDataProperties.swift */,
+				F5AEBF4A1CBEAE48002221E3 /* SelectedDepartureStation.swift */,
+				F5AEBF4B1CBEAE48002221E3 /* SelectedDepartureStationPoint+CoreDataProperties.swift */,
+				F5AEBF4C1CBEAE48002221E3 /* SelectedDepartureStationPoint.swift */,
+			);
+			name = SelectedDepartureData;
+			sourceTree = "<group>";
+		};
+		F5AEBF511CBEAF99002221E3 /* ArrivalData */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEBF621CBEB153002221E3 /* SelectedArrivalData */,
+				F5AEBF521CBEAFF6002221E3 /* ArrivalStation+CoreDataProperties.swift */,
+				F5AEBF531CBEAFF6002221E3 /* ArrivalStation.swift */,
+				F5AEBF541CBEAFF6002221E3 /* ArrivalPoint+CoreDataProperties.swift */,
+				F5AEBF551CBEAFF6002221E3 /* ArrivalPoint.swift */,
+				F5AEBF561CBEAFF6002221E3 /* ArrivalCity+CoreDataProperties.swift */,
+				F5AEBF571CBEAFF6002221E3 /* ArrivalCity.swift */,
+				F5AEBF581CBEAFF6002221E3 /* ArrivalStationPoint+CoreDataProperties.swift */,
+				F5AEBF591CBEAFF6002221E3 /* ArrivalStationPoint.swift */,
+			);
+			name = ArrivalData;
+			sourceTree = "<group>";
+		};
+		F5AEBF621CBEB153002221E3 /* SelectedArrivalData */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEBF631CBEB189002221E3 /* SelectedArrivalStation+CoreDataProperties.swift */,
+				F5AEBF641CBEB189002221E3 /* SelectedArrivalStation.swift */,
+				F5AEBF691CBEB1CB002221E3 /* SelectedArrivalStationPoint+CoreDataProperties.swift */,
+				F5AEBF6A1CBEB1CB002221E3 /* SelectedArrivalStationPoint.swift */,
+			);
+			name = SelectedArrivalData;
+			sourceTree = "<group>";
+		};
+		F5AEBF6D1CBEB2F2002221E3 /* SelectedData */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEBF6E1CBEB35C002221E3 /* SelectedDate+CoreDataProperties.swift */,
+				F5AEBF6F1CBEB35C002221E3 /* SelectedDate.swift */,
+			);
+			name = SelectedData;
+			sourceTree = "<group>";
+		};
+		F5AEBF721CBEB3E3002221E3 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F528994E1CBEB60B001135EF /* allStations.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
 		F5B0FF301CBE590F00F4EBC9 = {
 			isa = PBXGroup;
 			children = (
 				F5B0FF3B1CBE590F00F4EBC9 /* Project */,
 				F5B0FF531CBE590F00F4EBC9 /* ProjectUITests */,
 				F5B0FF3A1CBE590F00F4EBC9 /* Products */,
+				57C8CB6F8D72ADA49C43FD4C /* Pods */,
+				84127BFB7BA4E1848809C36D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,11 +268,15 @@
 			isa = PBXGroup;
 			children = (
 				F5B0FF3C1CBE590F00F4EBC9 /* AppDelegate.swift */,
-				F5B0FF3E1CBE590F00F4EBC9 /* ViewController.swift */,
+				F52899501CBEB652001135EF /* Controllers */,
+				F52899621CBEC5A2001135EF /* Cells */,
+				F52899511CBEB720001135EF /* DataManager */,
 				F5B0FF401CBE590F00F4EBC9 /* Main.storyboard */,
-				F5B0FF461CBE590F00F4EBC9 /* Assets.xcassets */,
 				F5B0FF481CBE590F00F4EBC9 /* LaunchScreen.storyboard */,
+				F5B0FF461CBE590F00F4EBC9 /* Assets.xcassets */,
 				F5B0FF4B1CBE590F00F4EBC9 /* Info.plist */,
+				F5AEBF721CBEB3E3002221E3 /* JSON */,
+				F5B0FF5F1CBE5C8300F4EBC9 /* Core Data */,
 				F5B0FF431CBE590F00F4EBC9 /* Project.xcdatamodeld */,
 			);
 			path = Project;
@@ -99,6 +291,32 @@
 			path = ProjectUITests;
 			sourceTree = "<group>";
 		};
+		F5B0FF5F1CBE5C8300F4EBC9 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEBF6D1CBEB2F2002221E3 /* SelectedData */,
+				F5AEBF511CBEAF99002221E3 /* ArrivalData */,
+				F5B0FF601CBE5CB500F4EBC9 /* DepartureData */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		F5B0FF601CBE5CB500F4EBC9 /* DepartureData */ = {
+			isa = PBXGroup;
+			children = (
+				F5AEBF481CBEADDD002221E3 /* SelectedDepartureData */,
+				F5AEBF381CBEAB20002221E3 /* DepartureCity+CoreDataProperties.swift */,
+				F5AEBF391CBEAB20002221E3 /* DepartureCity.swift */,
+				F5AEBF3C1CBEAB74002221E3 /* DepartureStationPoint+CoreDataProperties.swift */,
+				F5AEBF3D1CBEAB74002221E3 /* DepartureStationPoint.swift */,
+				F5AEBF3E1CBEAB74002221E3 /* DeparturePoint+CoreDataProperties.swift */,
+				F5AEBF3F1CBEAB74002221E3 /* DeparturePoint.swift */,
+				F5AEBF401CBEAB74002221E3 /* DepartureStation+CoreDataProperties.swift */,
+				F5AEBF411CBEAB74002221E3 /* DepartureStation.swift */,
+			);
+			name = DepartureData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +324,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5B0FF591CBE590F00F4EBC9 /* Build configuration list for PBXNativeTarget "Project" */;
 			buildPhases = (
+				F2944412DA5DB6B39B69E421 /* Check Pods Manifest.lock */,
 				F5B0FF351CBE590F00F4EBC9 /* Sources */,
 				F5B0FF361CBE590F00F4EBC9 /* Frameworks */,
 				F5B0FF371CBE590F00F4EBC9 /* Resources */,
+				D16CF4743E374E0EBD33E3B6 /* Embed Pods Frameworks */,
+				FD4056E3DC91C6075C62DB10 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +403,7 @@
 			files = (
 				F5B0FF4A1CBE590F00F4EBC9 /* LaunchScreen.storyboard in Resources */,
 				F5B0FF471CBE590F00F4EBC9 /* Assets.xcassets in Resources */,
+				F528994F1CBEB60B001135EF /* allStations.json in Resources */,
 				F5B0FF421CBE590F00F4EBC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,14 +417,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D16CF4743E374E0EBD33E3B6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2944412DA5DB6B39B69E421 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD4056E3DC91C6075C62DB10 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5B0FF351CBE590F00F4EBC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B0FF3F1CBE590F00F4EBC9 /* ViewController.swift in Sources */,
+				F52899571CBEB8F6001135EF /* UIUtilits.swift in Sources */,
+				F52899551CBEB7F3001135EF /* DataManager.swift in Sources */,
+				F52899661CBEC7A4001135EF /* MainArrivalTableViewCell.swift in Sources */,
+				F52899641CBEC787001135EF /* MainDepartureTableViewCell.swift in Sources */,
+				F5AEBF5A1CBEAFF6002221E3 /* ArrivalStation+CoreDataProperties.swift in Sources */,
+				F5AEBF601CBEAFF6002221E3 /* ArrivalStationPoint+CoreDataProperties.swift in Sources */,
+				F52899681CBEC7C8001135EF /* MainDateTableViewCell.swift in Sources */,
+				F528995D1CBEC0B9001135EF /* ArrivalTableViewController.swift in Sources */,
+				F52899591CBEBDCC001135EF /* MainTableViewController.swift in Sources */,
+				F52899701CBED384001135EF /* ArrivalTableViewCell.swift in Sources */,
+				F5AEBF471CBEAB74002221E3 /* DepartureStation.swift in Sources */,
+				F5AEBF421CBEAB74002221E3 /* DepartureStationPoint+CoreDataProperties.swift in Sources */,
+				F5AEBF451CBEAB74002221E3 /* DeparturePoint.swift in Sources */,
+				F5AEBF501CBEAE48002221E3 /* SelectedDepartureStationPoint.swift in Sources */,
+				F5AEBF3A1CBEAB20002221E3 /* DepartureCity+CoreDataProperties.swift in Sources */,
+				F5AEBF441CBEAB74002221E3 /* DeparturePoint+CoreDataProperties.swift in Sources */,
+				F5AEBF5E1CBEAFF6002221E3 /* ArrivalCity+CoreDataProperties.swift in Sources */,
+				F528995F1CBEC14B001135EF /* InfoStationViewController.swift in Sources */,
+				F5AEBF701CBEB35C002221E3 /* SelectedDate+CoreDataProperties.swift in Sources */,
+				F5AEBF4D1CBEAE48002221E3 /* SelectedDepartureStation+CoreDataProperties.swift in Sources */,
+				F5AEBF461CBEAB74002221E3 /* DepartureStation+CoreDataProperties.swift in Sources */,
 				F5B0FF451CBE590F00F4EBC9 /* Project.xcdatamodeld in Sources */,
+				F528995B1CBEC08B001135EF /* DepartureTableViewController.swift in Sources */,
+				F5AEBF6B1CBEB1CB002221E3 /* SelectedArrivalStationPoint+CoreDataProperties.swift in Sources */,
+				F5AEBF6C1CBEB1CB002221E3 /* SelectedArrivalStationPoint.swift in Sources */,
+				F5AEBF4F1CBEAE48002221E3 /* SelectedDepartureStationPoint+CoreDataProperties.swift in Sources */,
+				F5AEBF5C1CBEAFF6002221E3 /* ArrivalPoint+CoreDataProperties.swift in Sources */,
+				F5AEBF5F1CBEAFF6002221E3 /* ArrivalCity.swift in Sources */,
 				F5B0FF3D1CBE590F00F4EBC9 /* AppDelegate.swift in Sources */,
+				F5AEBF651CBEB189002221E3 /* SelectedArrivalStation+CoreDataProperties.swift in Sources */,
+				F5AEBF661CBEB189002221E3 /* SelectedArrivalStation.swift in Sources */,
+				F5AEBF3B1CBEAB20002221E3 /* DepartureCity.swift in Sources */,
+				F5AEBF431CBEAB74002221E3 /* DepartureStationPoint.swift in Sources */,
+				F5AEBF4E1CBEAE48002221E3 /* SelectedDepartureStation.swift in Sources */,
+				F52899611CBEC17A001135EF /* DateViewController.swift in Sources */,
+				F5AEBF5D1CBEAFF6002221E3 /* ArrivalPoint.swift in Sources */,
+				F5AEBF611CBEAFF6002221E3 /* ArrivalStationPoint.swift in Sources */,
+				F5AEBF711CBEB35C002221E3 /* SelectedDate.swift in Sources */,
+				F528996E1CBED371001135EF /* DepartureTableViewCell.swift in Sources */,
+				F5AEBF5B1CBEAFF6002221E3 /* ArrivalStation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +638,7 @@
 		};
 		F5B0FF5A1CBE590F00F4EBC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F39D4DCCB167E2415D4E24A8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Project/Info.plist;
@@ -342,6 +650,7 @@
 		};
 		F5B0FF5B1CBE590F00F4EBC9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9946F0554C95C4CF9245C6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Project/Info.plist;
@@ -392,6 +701,7 @@
 				F5B0FF5B1CBE590F00F4EBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5B0FF5C1CBE590F00F4EBC9 /* Build configuration list for PBXNativeTarget "ProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +710,7 @@
 				F5B0FF5E1CBE590F00F4EBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
