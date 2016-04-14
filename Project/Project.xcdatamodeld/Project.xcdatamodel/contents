@@ -1,4 +1,113 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="ArrivalCity" representedClassName=".ArrivalCity" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="districtTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="point" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArrivalPoint" inverseName="city" inverseEntity="ArrivalPoint" syncable="YES"/>
+        <relationship name="stations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArrivalStation" inverseName="city" inverseEntity="ArrivalStation" syncable="YES"/>
+    </entity>
+    <entity name="ArrivalPoint" representedClassName=".ArrivalPoint" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArrivalCity" inverseName="point" inverseEntity="ArrivalCity" syncable="YES"/>
+    </entity>
+    <entity name="ArrivalStation" representedClassName=".ArrivalStation" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="districtTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="stationTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArrivalCity" inverseName="stations" inverseEntity="ArrivalCity" syncable="YES"/>
+        <relationship name="point" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArrivalStationPoint" inverseName="station" inverseEntity="ArrivalStationPoint" syncable="YES"/>
+    </entity>
+    <entity name="ArrivalStationPoint" representedClassName=".ArrivalStationPoint" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="station" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ArrivalStation" inverseName="point" inverseEntity="ArrivalStation" syncable="YES"/>
+    </entity>
+    <entity name="DepartureCity" representedClassName=".DepartureCity" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="districtTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="point" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DeparturePoint" inverseName="city" inverseEntity="DeparturePoint" syncable="YES"/>
+        <relationship name="stations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DepartureStation" inverseName="city" inverseEntity="DepartureStation" syncable="YES"/>
+    </entity>
+    <entity name="DeparturePoint" representedClassName=".DeparturePoint" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DepartureCity" inverseName="point" inverseEntity="DepartureCity" syncable="YES"/>
+    </entity>
+    <entity name="DepartureStation" representedClassName=".DepartureStation" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="districtTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="stationTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DepartureCity" inverseName="stations" inverseEntity="DepartureCity" syncable="YES"/>
+        <relationship name="point" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DepartureStationPoint" inverseName="station" inverseEntity="DepartureStationPoint" syncable="YES"/>
+    </entity>
+    <entity name="DepartureStationPoint" representedClassName=".DepartureStationPoint" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="station" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DepartureStation" inverseName="point" inverseEntity="DepartureStation" syncable="YES"/>
+    </entity>
+    <entity name="SelectedArrivalStation" representedClassName=".SelectedArrivalStation" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="districtTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="stationTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="point" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SelectedArrivalStationPoint" inverseName="station" inverseEntity="SelectedArrivalStationPoint" syncable="YES"/>
+    </entity>
+    <entity name="SelectedArrivalStationPoint" representedClassName=".SelectedArrivalStationPoint" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="station" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="SelectedArrivalStation" inverseName="point" inverseEntity="SelectedArrivalStation" syncable="YES"/>
+    </entity>
+    <entity name="SelectedDate" representedClassName=".SelectedDate" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="SelectedDepartureStation" representedClassName=".SelectedDepartureStation" syncable="YES">
+        <attribute name="cityId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cityTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="districtTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="stationTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="point" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SelectedDepartureStationPoint" inverseName="station" inverseEntity="SelectedDepartureStationPoint" syncable="YES"/>
+    </entity>
+    <entity name="SelectedDepartureStationPoint" representedClassName=".SelectedDepartureStationPoint" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="station" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="SelectedDepartureStation" inverseName="point" inverseEntity="SelectedDepartureStation" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ArrivalCity" positionX="-4473" positionY="-720" width="128" height="163"/>
+        <element name="ArrivalPoint" positionX="-4104" positionY="-727" width="128" height="88"/>
+        <element name="ArrivalStation" positionX="-4284" positionY="-511" width="128" height="178"/>
+        <element name="ArrivalStationPoint" positionX="-4095" positionY="-547" width="128" height="88"/>
+        <element name="DepartureCity" positionX="-3717" positionY="-847" width="128" height="163"/>
+        <element name="DeparturePoint" positionX="-3413" positionY="-871" width="128" height="88"/>
+        <element name="DepartureStation" positionX="-3512" positionY="-628" width="128" height="178"/>
+        <element name="DepartureStationPoint" positionX="-3312" positionY="-648" width="128" height="88"/>
+        <element name="SelectedArrivalStation" positionX="-3906" positionY="-909" width="128" height="163"/>
+        <element name="SelectedArrivalStationPoint" positionX="-3870" positionY="-666" width="128" height="88"/>
+        <element name="SelectedDate" positionX="-3908" positionY="-1026" width="128" height="58"/>
+        <element name="SelectedDepartureStation" positionX="-3870" positionY="-529" width="128" height="163"/>
+        <element name="SelectedDepartureStationPoint" positionX="-3899" positionY="-322" width="128" height="88"/>
+    </elements>
 </model>
